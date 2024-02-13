@@ -1,24 +1,35 @@
-*{
+/* Global styles */
+* {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: #1a1a1a;
 }
-h1 , h2 , h3 , p{
+
+/* Resetting default margins for specified elements */
+h1, h2, h3, p {
   margin: 0;
 }
-ul{
+
+/* Resetting default styles for list */
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.box-shadow{
+
+/* Common styles for a box shadow */
+.box-shadow {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.curp{
+
+/* Cursor style for elements with class 'curp' */
+.curp {
   cursor: pointer;
 }
-.header-main{
+
+/* Header styles */
+.header-main {
   background-color: #ffffff;
   display: flex;
   height: 9vh;
@@ -26,66 +37,83 @@ ul{
   align-items: center;
   justify-content: flex-start;
 }
-.header-nav{
+
+/* Navigation bar styles */
+.header-nav {
   max-width: 100%;
   display: flex;
 }
-.displaybx{
+
+/* Styles for a display box */
+.displaybx {
   display: flex;
   height: 1.8rem;
   align-items: center;
   padding: 0 0.7rem;
   justify-content: space-between;
-  border: rgba(204,205,207,255) solid 1px;
+  border: rgba(204, 205, 207, 255) solid 1px;
   border-radius: 0.4rem;
   cursor: pointer;
   transition: filter 300ms;
 }
-.displaybx:hover{
+
+/* Hover effect for display box */
+.displaybx:hover {
   filter: brightness(1.2);
 }
-.drop-down{
+
+/* Dropdown styles */
+.drop-down {
   position: absolute;
   top: 58px;
   width: 300px;
   background-color: #ffffff;
-  border: rgba(204,205,207,255) solid 1px;
+  border: rgba(204, 205, 207, 255) solid 1px;
   border-radius: 0.4rem;
   padding: 1rem;
   z-index: 1000;
   overflow: hidden;
 }
 
-.drop-down-item{
+/* Styles for dropdown items */
+.drop-down-item {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
   margin: 0.5rem 0;
 }
-.drop-down-item p{
+
+/* Styles for text inside dropdown items */
+.drop-down-item p {
   color: #626262;
 }
-.drop-down-item select{
+
+/* Styles for select element inside dropdown items */
+.drop-down-item select {
   width: 40%;
   background-color: white;
   height: 1.8rem;
   border-radius: 0.4rem;
   padding: 0.1rem 0.5rem;
-  
 }
-.main-board{
+
+/* Main board styles */
+.main-board {
   padding: 0.8rem;
   display: flex;
-  /*width: 100%;*/
   justify-content: space-evenly;
 }
-.grid-col{
+
+/* Grid column styles */
+.grid-col {
   width: 19%;
   margin: 0 0.5rem;
   margin-top: 0.5rem;
 }
-.card-container{
+
+/* Card container styles */
+.card-container {
   background-color: #ffffff;
   min-width: 150px;
   height: 50px;
@@ -97,85 +125,104 @@ ul{
   border-radius: 0.4rem;
   margin-bottom: 0.8rem;
 }
-.card-container span{
+
+/* Styles for text inside card container */
+.card-container span {
   color: #70747a;
   font-weight: 200;
   font-size: 0.9rem;
 }
-.card-img{
+
+/* Styles for card image */
+.card-img {
   width: 1.2rem;
   height: 1.2rem;
   float: right;
   border-radius: 50%;
 }
-.card-head{
+
+/* Styles for card header */
+.card-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.card-container h3{
+
+/* Styles for card heading */
+.card-container h3 {
   font-size: 1rem;
   margin: 0.5rem 0;
 }
-.card-container p{
+
+/* Styles for card paragraph */
+.card-container p {
   font-size: 0.7rem;
   font-weight: 300;
-  border: rgba(204,205,207,255) solid 1px;
-  border-radius: 0.2rem;
-  display: inline;
-  margin-right: 4px;
-  padding: 0.2rem;
-}
-.grid-col-head{
-  display: flex;
-  margin-bottom: 1rem;
-  align-items: center;
-  justify-content: space-between;
-}
-.stylep{
-  font-size: 1rem;
-  font-weight: 300;
-  border: rgba(204,205,207,255) solid 1px;
+  border: rgba(204, 205, 207, 255) solid 1px;
   border-radius: 0.2rem;
   display: inline;
   margin-right: 4px;
   padding: 0.2rem;
 }
 
-/* profile image */
-.user-profile-image{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 1.5rem;
-height: 1.5rem;
-background-color: #2b963a;
-border-radius: 50%;
+/* Grid column header styles */
+.grid-col-head {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: space-between;
 }
-.available{
+
+/* Styles for inline text with border */
+.stylep {
+  font-size: 1rem;
+  font-weight: 300;
+  border: rgba(204, 205, 207, 255) solid 1px;
+  border-radius: 0.2rem;
+  display: inline;
+  margin-right: 4px;
+  padding: 0.2rem;
+}
+
+/* Profile image styles */
+.user-profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #2b963a;
+  border-radius: 50%;
+}
+
+/* Available status styles */
+.available {
   color: rgb(255, 196, 0);
   line-height: 1px;
   font-size: 2rem;
   position: absolute;
   transform: translate(13px, -1px);
 }
-.loader-div{
+
+/* Loader div styles */
+.loader-div {
   height: 89vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* responsive desgin */
+/* Responsive design for screens up to 900px width */
 @media only screen and (max-width: 900px) {
-  .main-board{
-      flex-direction: column;
-      flex-wrap: wrap;
+  .main-board {
+    flex-direction: column;
+    flex-wrap: wrap;
   }    
-  .grid-col{
-      width: 100%;
-      padding: 0 1rem;
-      margin: 1rem 0;
-      border-bottom: #c6c6c6 1px solid;
+  .grid-col {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    border-bottom: #c6c6c6 
+
   }
 }
