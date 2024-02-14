@@ -88,9 +88,6 @@ The application will be accessible at http://localhost:3000 in your web browser.
 ## ProfileImage
    The ProfileImage component generates a user profile image based on the user's name initials. It also includes an indicator for user availability.
 
-## License
-   This project is licensed under the MIT License.
-
 
 
 
