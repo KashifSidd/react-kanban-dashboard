@@ -37,4 +37,20 @@ Before running the application, make sure you have the following installed:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/kanban-dashboard.git
+   git clone https://github.com/KashifSidd/react-kanban-dashboard.git
+
+1. Navigate to the project directory:
+
+   ```bash
+   cd kanban-dashboard
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+
+1. Start the development server:
+
+   ```bash
+   npm start
+The application will be accessible at http://localhost:3000 in your web browser.
