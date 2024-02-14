@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/header";
 import Board from "./components/board";
-import Cookies from 'js-cookies';
 import './App.css';
 import loader from './assets/loader.gif'
 
@@ -15,21 +14,7 @@ export default function App() {
 
     // Function to update filter based on key and value
     const changeFilter = (key, val) => {
-        if (key === 'grouping') {
-            setFilter(prvFilter => {
-                return {
-                    ...prvFilter,
-                    grouping: val,
-                }
-            })
-        } else if (key === 'ordering') {
-            setFilter(prvFilter => {
-                return {
-                    ...prvFilter,
-                    ordering: val,
-                }
-            })
-        }
+        setFilter(prvFilter => ({ ...prvFilter, [key]: val }));
     }
 
     // Effect to load saved filter from localStorage on component mount
