@@ -54,3 +54,46 @@ Before running the application, make sure you have the following installed:
    ```bash
    npm start
 The application will be accessible at http://localhost:3000 in your web browser.
+
+## Usage
+
+## Filtering and Sorting
+   The application provides a user-friendly interface for filtering and sorting tasks. Use the dropdown menu in the header to select the grouping and ordering criteria. The board will dynamically update to display tasks based on the selected filters.
+
+## Components
+## App
+   The App component is the main entry point of the application. It manages the state for tasks, users, filters, and loading status. It also includes the Header and Board components.
+
+## Header
+   he Header component contains the dropdown menu for selecting grouping and ordering criteria. It communicates with the App component to update the filter state.
+
+## Board
+   The Board component renders the main content of the application. It dynamically displays tasks based on the selected filters and includes subcomponents like Status, Priority, and Users.
+
+## DropdownMenu
+   The DropdownMenu component renders a dropdown menu with options for grouping and ordering criteria. It communicates with the Header component to update the filter state.
+
+## Status
+   The Status component displays tasks grouped by their status. It dynamically renders cards for tasks in each status category.
+
+## Priority
+   The Priority component displays tasks grouped by their priority. It dynamically renders cards for tasks in each priority category.
+
+## Users
+   The Users component displays tasks grouped by assigned users. It dynamically renders cards for tasks assigned to each user.
+
+## Card
+   The Card component represents an individual task and displays relevant information, including status, title, priority, and tags.
+
+## ProfileImage
+   The ProfileImage component generates a user profile image based on the user's name initials. It also includes an indicator for user availability.
+
+## License
+   This project is licensed under the MIT License.
+
+
+
+
+
+
+
